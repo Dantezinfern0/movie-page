@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-const apiUrl = '?api_key=afc7a0ada171a2a77126fd0d421b758c'
+const apiKey = 'api_key=afc7a0ada171a2a77126fd0d421b758c'
 
 class Homepage extends Component {
   render() {
