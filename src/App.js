@@ -4,7 +4,15 @@ import Axios from 'axios'
 
 class App extends Component {
   render() {
-    return <Homepage />
+    return (
+      <>
+        <Router>
+          <Switch>
+            <Route />
+          </Switch>
+        </Router>
+      </>
+    )
   }
 }
 
