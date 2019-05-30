@@ -5,6 +5,7 @@ class Homepage extends Component {
     return (
       <div>
         <header>Current Movies:</header>
+        <p>movie 1 goes here</p>
       </div>
     )
   }
