@@ -11,6 +11,11 @@ class Homepage extends Component {
     Axios.get(`${apiUrl}${apiKey}${apiUrlEnd}`).then(function(response) {
       console.log(response)
     })
+    Axios.get(`${apiUrl}${apiKey}${apiUrlEnd}`).then(resp => {
+      this.setState({
+        movieList: resp.data.results
+      })
+    })
   }
   render() {
     return (
