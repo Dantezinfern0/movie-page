@@ -19,6 +19,7 @@ class Homepage extends Component {
         <p>movie 1 goes here</p>
         <p>Dante Was Here</p>
         <p>Dante Makes a lot of changes</p>
+        <Link to="/cast"> Aladdin cast</Link>
       </div>
     )
   }
