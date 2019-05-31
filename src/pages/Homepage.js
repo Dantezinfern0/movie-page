@@ -7,16 +7,18 @@ const apiUrl = 'https://api.themoviedb.org/3/movie/now_playing?api_key='
 const apiUrlEnd = '&language=en-US&page=1'
 
 class Homepage extends Component {
+  state = {
+    movieList: {}
+  }
   componentDidMount() {
-    Axios.get(`${apiUrl}${apiKey}${apiUrlEnd}`).then(function(response) {
-      console.log(response)
-    }).then(resp => {
-      this.setState(
-        {
-          movieList: resp.data
-        })
+    Axios.get(`${apiUrl}${apiKey}${apiUrlEnd}`).then(function(resp) {
+      console.log(resp)
+    })
+    this.setState({
+      movieList: resp.data.results
     })
   }
+
   render() {
     return (
       <div className="homepage-background">
