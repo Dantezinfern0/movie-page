@@ -10,6 +10,11 @@ class Homepage extends Component {
   componentDidMount() {
     Axios.get(`${apiUrl}${apiKey}${apiUrlEnd}`).then(function(response) {
       console.log(response)
+    }).then(resp => {
+      this.setState(
+        {
+          movieList: resp.data
+        })
     })
   }
   render() {
@@ -23,6 +28,7 @@ class Homepage extends Component {
         <p>movie 1 goes here</p>
         <p>Dante Was Here</p>
         <p>Dante Makes a lot of changes</p>
+        <Link to="/cast"> Aladdin cast</Link>
       </div>
     )
   }
