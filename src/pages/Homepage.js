@@ -15,7 +15,11 @@ class Homepage extends Component {
   render() {
     return (
       <div className="homepage-background">
-        <header>Current Movies:</header>
+        <div>
+          <header className="nav">
+            <div>Home</div>
+          </header>
+        </div>
         <p>movie 1 goes here</p>
         <p>Dante Was Here</p>
         <p>Dante Makes a lot of changes</p>
