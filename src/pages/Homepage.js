@@ -8,14 +8,15 @@ const apiUrlEnd = '&language=en-US&page=1'
 
 class Homepage extends Component {
   componentDidMount() {
-    Axios.get(`${apiUrl}${apiKey}${apiUrlEnd}`).then(function(response) {
-      console.log(response)
-    }).then(resp => {
-      this.setState(
-        {
+    Axios.get(`${apiUrl}${apiKey}${apiUrlEnd}`)
+      .then(function(response) {
+        console.log(response)
+      })
+      .then(resp => {
+        this.setState({
           movieList: resp.data
         })
-    })
+      })
   }
   render() {
     return (
