@@ -35,3 +35,13 @@ body {
   text-align: right;
   margin-right: 2rem;
 }
+
+.movie-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* .home-poster {
+  margin: 0 auto;
+} */
