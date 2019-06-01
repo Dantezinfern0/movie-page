@@ -3,12 +3,13 @@
 }
 
 html {
-  height: 100%;
+  min-height: 100%;
 }
 
 body {
   margin: 0;
   min-height: 100%;
+  background-color:darkred;
 }
 
 .homepage-background {
@@ -24,10 +25,9 @@ body {
   display: flex;
   justify-content: center;
 }
-
-@media screen and (max-width: 450px) {
-  .homepage-background {
-    background-image: url('./images/curtain.jpg');
-    background-position: 20% 0;
-  }
+.centered-text {
+  text-align: center;
+}
+.right-justify {
+  text-align: right;
 }
