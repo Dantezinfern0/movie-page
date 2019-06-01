@@ -16,6 +16,11 @@ class IndividualMovies extends Component {
         />
         {/* <img src="http://image.tmdb.org/t/p/w500/wgQ7APnFpf1TuviKHXeEe3KnsTV.jpg" /> working url path to test */}
         <h3 className="centered-text">{this.props.moOb.overview}</h3>
+        <h6>
+          <Link to={`/Movie/${this.props.moOb.id}`} className="movie-link">
+            Meet the cast of {this.props.moOb.title}!
+          </Link>
+        </h6>
         <h4 className="right-justify">
           Rating/Vote Score: {this.props.moOb.vote_average}
         </h4>
@@ -23,11 +28,6 @@ class IndividualMovies extends Component {
           Released:{this.props.moOb.release_date}
           {/* <Moment format="MMM Do, YYYY">{this.props.moOb.release_date}</Moment> */}
         </h5>
-        <h6>
-          <Link to={`/Movie/${this.props.moOb.id}`} className="movie-link">
-            Meet the cast of {this.props.moOb.title}!
-          </Link>
-        </h6>
       </div>
     )
   }
