@@ -29,9 +29,11 @@ body {
 }
 .centered-text {
   text-align: center;
+  margin: 0 2rem 0 2rem;
 }
 .right-justify {
   text-align: right;
+  margin-right: 2rem;
 }
 
 .movie-container {

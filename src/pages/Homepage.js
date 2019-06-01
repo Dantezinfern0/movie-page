@@ -9,8 +9,7 @@ const apiUrlEnd = '&language=en-US&page=1'
 
 class Homepage extends Component {
   state = {
-    movieList: [],
-    images: []
+    movieList: []
   }
   componentDidMount() {
     Axios.get(`${apiUrl}${apiKey}${apiUrlEnd}`).then(resp => {
@@ -25,7 +24,7 @@ class Homepage extends Component {
       <div className="homepage-background">
         <div>
           <header className="nav">
-            <div>Home</div>
+            <h1>The Best Movie Site</h1>
           </header>
         </div>
         {/* link to movie page will be accessed by clicking on the movie */}

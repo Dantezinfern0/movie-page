@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import Homepage from './pages/Homepage'
 import Cast from './pages/Cast'
-// import Axios from 'axios'
-import MoviePage from './pages/MoviePage.js'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import MoviePage from './pages/MoviePage.js'
+// import Axios from 'axios'
 
 class App extends Component {
   render() {
