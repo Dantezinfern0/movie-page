@@ -3,12 +3,13 @@
 }
 
 html {
-  height: 100%;
+  min-height: 100%;
 }
 
 body {
   margin: 0;
   min-height: 100%;
+  background-color:darkred;
 }
 
 .homepage-background {
@@ -23,4 +24,10 @@ body {
 .nav {
   display: flex;
   justify-content: center;
+}
+.centered-text {
+  text-align: center;
+}
+.right-justify {
+  text-align: right;
 }
