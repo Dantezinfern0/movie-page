@@ -24,7 +24,9 @@ class IndividualMovies extends Component {
           {/* <Moment format="MMM Do, YYYY">{this.props.moOb.release_date}</Moment> */}
         </h5>
         <h6>
-          <Link to={`/Movie/${this.props.moOb.id}`}>Movie Page</Link>
+          <Link to={`/Movie/${this.props.moOb.id}`} className="movie-link">
+            Meet the cast of {this.props.moOb.title}!
+          </Link>
         </h6>
       </div>
     )

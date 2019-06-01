@@ -25,10 +25,12 @@ class MoviePage extends Component {
   render() {
     return (
       <div>
-        <h1>Movie Title</h1>
-        <i>Movie Picture</i>
-        <p>movie description</p>
-        <p>movie rating</p>
+        <div className="movie-page-container">
+          <i>Movie Picture</i>
+          <h1>Movie Title</h1>
+          <p>movie description</p>
+          <p>movie rating</p>
+        </div>
         <div>
           <ul>
             {this.state.castList.map((char, i) => {

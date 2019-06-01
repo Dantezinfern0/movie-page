@@ -43,9 +43,27 @@ body {
   align-items: center;
 }
 
+.movie-page-container {
+  text-align: center;
+  color: white;
+}
+
 .actor-info {
   color: white;
 }
-/* .home-poster {
-  margin: 0 auto;
-} */
+
+.movie-link {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+}
+
+.home-poster {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.home-button {
+  color: white;
+  font-size: 18px;
+}

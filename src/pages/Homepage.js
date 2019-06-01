@@ -33,7 +33,6 @@ class Homepage extends Component {
             return <IndividualMovies key={i} moOb={mOb} />
           })}
         </ul>
-        <Link to="/cast"> Aladdin cast</Link>
       </div>
     )
   }
