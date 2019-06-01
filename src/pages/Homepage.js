@@ -8,13 +8,16 @@ const apiUrl = 'https://api.themoviedb.org/3/movie/now_playing?api_key='
 const apiUrlEnd = '&language=en-US&page=1'
 
 class Homepage extends Component {
+  state = {
+    movieList: []
+  }
   componentDidMount() {
     // Axios.get(`${apiUrl}${apiKey}${apiUrlEnd}`).then(function(response) {
     //   console.log(response)
     // })
     Axios.get(`${apiUrl}${apiKey}${apiUrlEnd}`).then(resp => {
       this.setState({
-        movieList: resp.data.results
+        movieList: resp.data
       })
     })
   }
@@ -27,10 +30,11 @@ class Homepage extends Component {
           </header>
         </div>
         <ul>
-          {this.state.movieList.map((movie, index) => {
-            return <Movie key={index} movie={movie} />
-          })}
+          {/* {this.state.movieList.title.map((movie, index) => {
+            return <Movie key={index} movieTitle={movie} />
+          })} */}
         </ul>
+        <Movie />
         <button>
           link to movie page will be accessed by clicking on the movie
         </button>
