@@ -9,7 +9,7 @@ html {
 body {
   margin: 0;
   min-height: 100%;
-  background-color:darkred;
+  background-color: darkred;
 }
 
 .homepage-background {
@@ -19,6 +19,8 @@ body {
   background-size: cover;
   height: 100vh;
   color: white;
+  background-position: absolute;
+  overflow-y: scroll;
 }
 
 .nav {
