@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import Axios from 'axios'
-import Movie from './Movie.js'
+import IndividualMovies from './IndividualMovies.js'
 
 const apiKey = 'afc7a0ada171a2a77126fd0d421b758c'
 const apiUrl = 'https://api.themoviedb.org/3/movie/now_playing?api_key='
@@ -34,7 +34,7 @@ class Homepage extends Component {
             return <h1>{movie.title}</h1>
           })}
         </ul>
-        <Movie />
+        
         <button>
           link to movie page will be accessed by clicking on the movie
         </button>

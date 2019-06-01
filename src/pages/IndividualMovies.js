@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import HomeButton from '../components/HomeButton.js'
 
-class Movie extends Component {
+class IndividualMovies extends Component {
   render() {
     return (
       <div>
@@ -14,4 +14,4 @@ class Movie extends Component {
   }
 }
 
-export default Movie
+export default IndividualMovies
