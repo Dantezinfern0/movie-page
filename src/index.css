@@ -33,3 +33,13 @@ body {
 .right-justify {
   text-align: right;
 }
+
+.movie-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* .home-poster {
+  margin: 0 auto;
+} */
