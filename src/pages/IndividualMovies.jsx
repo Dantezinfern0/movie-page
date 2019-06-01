@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Moment from 'react-moment'
+// import Moment from 'react-moment'
 
 const imagePreUrl = 'https://image.tmdb.org/t/p/'
 const imageSize = ['w92', 'w154', 'w185', 'w342', 'w500', 'w780', 'original']
