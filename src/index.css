@@ -24,3 +24,10 @@ body {
   display: flex;
   justify-content: center;
 }
+
+@media screen and (max-width: 450px) {
+  .homepage-background {
+    background-image: url('./images/curtain.jpg');
+    background-position: 20% 0;
+  }
+}
