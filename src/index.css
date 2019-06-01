@@ -48,7 +48,7 @@ body {
   color: white;
 }
 
-.actor-info {
+.actor-container {
   color: white;
 }
 
@@ -66,4 +66,12 @@ body {
 .home-button {
   color: white;
   font-size: 18px;
+}
+
+.actor-info {
+  font-size: 20px;
+}
+
+hr {
+  margin-right: 4rem;
 }

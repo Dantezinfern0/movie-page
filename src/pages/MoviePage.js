@@ -26,10 +26,7 @@ class MoviePage extends Component {
     return (
       <div>
         <div className="movie-page-container">
-          <i>Movie Picture</i>
-          <h1>Movie Title</h1>
-          <p>movie description</p>
-          <p>movie rating</p>
+          <h1>Cast</h1>
         </div>
         <div>
           <ul>
