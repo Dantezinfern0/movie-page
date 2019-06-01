@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import Axios from 'axios'
+import Movie from './Movie.js'
 
 const apiKey = 'afc7a0ada171a2a77126fd0d421b758c'
 const apiUrl = 'https://api.themoviedb.org/3/movie/now_playing?api_key='
@@ -25,8 +26,14 @@ class Homepage extends Component {
             <div>Home</div>
           </header>
         </div>
-        <p>movie 1 goes here</p>
-        <button>link to movie page will be accessed by clicking on the movie</button>
+        <ul>
+          {this.state.movieList.map((movie, index) => {
+            return <Movie key={index} movie={movie} />
+          })}
+        </ul>
+        <button>
+          link to movie page will be accessed by clicking on the movie
+        </button>
         <Link to="/cast"> Aladdin cast</Link>
       </div>
     )
