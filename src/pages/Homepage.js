@@ -30,8 +30,8 @@ class Homepage extends Component {
           </header>
         </div>
         <ul>
-          {this.state.movieList.map((movie) => {
-            return <h1>{movie.title}</h1>
+          {this.state.movieList.map((mOb,i) => {
+            return <IndividualMovies key={i} moOb={mOb}/>
           })}
         </ul>
         
