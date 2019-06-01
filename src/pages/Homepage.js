@@ -8,9 +8,9 @@ const apiUrlEnd = '&language=en-US&page=1'
 
 class Homepage extends Component {
   componentDidMount() {
-    Axios.get(`${apiUrl}${apiKey}${apiUrlEnd}`).then(function(response) {
-      console.log(response)
-    })
+    // Axios.get(`${apiUrl}${apiKey}${apiUrlEnd}`).then(function(response) {
+    //   console.log(response)
+    // })
     Axios.get(`${apiUrl}${apiKey}${apiUrlEnd}`).then(resp => {
       this.setState({
         movieList: resp.data.results
@@ -26,8 +26,7 @@ class Homepage extends Component {
           </header>
         </div>
         <p>movie 1 goes here</p>
-        <p>Dante Was Here</p>
-        <p>Dante Makes a lot of changes</p>
+        <a>link to movie page will be accessed by clicking on the movie</a>
         <Link to="/cast"> Aladdin cast</Link>
       </div>
     )

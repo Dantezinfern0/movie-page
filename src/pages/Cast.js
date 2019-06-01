@@ -16,6 +16,7 @@ class Cast extends Component {
     return (
       <div>
         <h2>Cast goes here. (with pictures hopefully)</h2>
+        <HomeButton/>
       </div>
     )
   }
