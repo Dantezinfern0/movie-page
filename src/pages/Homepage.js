@@ -7,7 +7,6 @@ const apiKey = 'afc7a0ada171a2a77126fd0d421b758c'
 const apiUrl = 'https://api.themoviedb.org/3/movie/now_playing?api_key='
 const apiUrlEnd = '&language=en-US&page=1'
 
-
 class Homepage extends Component {
   state = {
     movieList: [],

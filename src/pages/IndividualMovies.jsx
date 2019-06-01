@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 // imagePreUrl includes the hard coded size of w500
+import { Link } from 'react-router-dom'
 const imagePreUrl = 'https://image.tmdb.org/t/p/'
 const imageSize = ['w92', 'w154', 'w185', 'w342', 'w500', 'w780', 'original']
 
@@ -20,6 +21,9 @@ class IndividualMovies extends Component {
         <h5 className="right-justify">
           Released: {this.props.moOb.release_date}
         </h5>
+        <h6>
+          <Link to={`/Movie/${this.props.moOb.id}`}>Movie Page</Link>
+        </h6>
       </div>
     )
   }
