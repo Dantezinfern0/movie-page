@@ -12,12 +12,12 @@ class Homepage extends Component {
     movieList: []
   }
   componentDidMount() {
-    // Axios.get(`${apiUrl}${apiKey}${apiUrlEnd}`).then(function(response) {
-    //   console.log(response)
-    // })
+    Axios.get(`${apiUrl}${apiKey}${apiUrlEnd}`).then(function(response) {
+      console.log(response)
+    })
     Axios.get(`${apiUrl}${apiKey}${apiUrlEnd}`).then(resp => {
       this.setState({
-        movieList: resp.data
+        movieList: resp.data.results
       })
     })
   }
@@ -30,9 +30,9 @@ class Homepage extends Component {
           </header>
         </div>
         <ul>
-          {/* {this.state.movieList.title.map((movie, index) => {
-            return <Movie key={index} movieTitle={movie} />
-          })} */}
+          {this.state.movieList.map((movie) => {
+            return <h1>{movie.title}</h1>
+          })}
         </ul>
         <Movie />
         <button>
