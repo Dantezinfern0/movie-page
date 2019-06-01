@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-// imagePreUrl includes the hard coded size of w500
+import Moment  from 'react-moment'
+
 const imagePreUrl = 'https://image.tmdb.org/t/p/'
 const imageSize = ['w92', 'w154', 'w185', 'w342', 'w500', 'w780', 'original']
 
@@ -18,7 +19,7 @@ class IndividualMovies extends Component {
           Rating/Vote Score: {this.props.moOb.vote_average}
         </h4>
         <h5 className="right-justify">
-          Released: {this.props.moOb.release_date}
+        <Moment format="MMM Mo, YYYY">{this.props.moOb.release_date}</Moment>
         </h5>
       </div>
     )
