@@ -18,6 +18,7 @@ class Homepage extends Component {
       this.setState({
         movieList: resp.data.results
       })
+      console.log(this.state.movieList)
     })
   }
   render() {
