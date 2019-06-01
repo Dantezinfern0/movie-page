@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import Axios from 'axios'
 
-// const apiKey = 'afc7a0ada171a2a77126fd0d421b758c'
+const apiKey = 'afc7a0ada171a2a77126fd0d421b758c'
 
 class Cast extends Component {
   componentDidMount() {
     Axios.get(
-      'https://api.themoviedb.org/3/movie/420817/credits?api_key=afc7a0ada171a2a77126fd0d421b758c'
+      `https://api.themoviedb.org/3/movie/420817/credits?api_key=${apiKey}`
     ).then(function(response) {
       console.log(response)
     })
