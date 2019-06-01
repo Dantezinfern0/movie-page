@@ -24,7 +24,7 @@ class Homepage extends Component {
       <div className="homepage-background">
         <div>
           <header className="nav">
-            <h1>The Best Movie Site</h1>
+            <h1>The Best Movie Site Ever</h1>
           </header>
         </div>
         {/* link to movie page will be accessed by clicking on the movie */}
