@@ -29,15 +29,12 @@ class Homepage extends Component {
             <div>Home</div>
           </header>
         </div>
+          {/* link to movie page will be accessed by clicking on the movie */}
         <ul>
           {this.state.movieList.map((mOb,i) => {
             return <IndividualMovies key={i} moOb={mOb}/>
           })}
         </ul>
-        
-        <button>
-          link to movie page will be accessed by clicking on the movie
-        </button>
         <Link to="/cast"> Aladdin cast</Link>
       </div>
     )
