@@ -33,7 +33,7 @@ body {
 }
 .right-justify {
   text-align: right;
-  margin:0 2rem 0 2rem;
+  margin: 0 2rem 0 2rem;
 }
 
 .movie-container {
@@ -50,6 +50,13 @@ body {
 
 .actor-container {
   color: white;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .movie-link {
