@@ -15,7 +15,6 @@ class CastMember extends Component {
         <p className="actor-info">
           {this.props.char.name} as "{this.props.char.character}"
         </p>
-        <hr />
       </div>
     )
   }

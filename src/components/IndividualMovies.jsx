@@ -10,11 +10,11 @@ class IndividualMovies extends Component {
     return (
       <div className="movie-container">
         <h1 className="centered-text">{this.props.moOb.title}</h1>
-        <Link to={`/${this.props.moOb.id}`} >
+        <Link to={`/Movie/${this.props.moOb.id}`}>
           <img
-          className="home-poster"
-          src={`${imagePreUrl}${imageSize[1]}${this.props.moOb.poster_path}`}
-        />
+            className="home-poster"
+            src={`${imagePreUrl}${imageSize[1]}${this.props.moOb.poster_path}`}
+          />
         </Link>
         {/* <img src="http://image.tmdb.org/t/p/w500/wgQ7APnFpf1TuviKHXeEe3KnsTV.jpg" /> working url path to test */}
         <h3 className="centered-text">{this.props.moOb.overview}</h3>
