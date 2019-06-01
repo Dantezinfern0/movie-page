@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Axios from 'axios'
+import HomeButton from '../components/HomeButton.js'
 
 // const apiKey = 'afc7a0ada171a2a77126fd0d421b758c'
 

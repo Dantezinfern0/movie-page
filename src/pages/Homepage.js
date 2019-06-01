@@ -26,7 +26,7 @@ class Homepage extends Component {
           </header>
         </div>
         <p>movie 1 goes here</p>
-        <a>link to movie page will be accessed by clicking on the movie</a>
+        <button>link to movie page will be accessed by clicking on the movie</button>
         <Link to="/cast"> Aladdin cast</Link>
       </div>
     )
