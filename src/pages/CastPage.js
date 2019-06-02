@@ -26,6 +26,7 @@ class CastPage extends Component {
     return (
       <div className="background-scroll">
         <div className="movie-page-container">
+          <HomeButton />
           <h1>Cast</h1>
         </div>
         <div>
@@ -35,7 +36,6 @@ class CastPage extends Component {
             })}
           </ul>
         </div>
-        <HomeButton />
       </div>
     )
   }

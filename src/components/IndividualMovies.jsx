@@ -17,7 +17,7 @@ class IndividualMovies extends Component {
           />
         </Link>
         {/* <img src="http://image.tmdb.org/t/p/w500/wgQ7APnFpf1TuviKHXeEe3KnsTV.jpg" /> working url path to test */}
-        <h3 className="centered-text">{this.props.moOb.overview}</h3>
+        <h3 className="summary-info">{this.props.moOb.overview}</h3>
         <h6>
           <Link to={`/Cast/${this.props.moOb.id}`} className="movie-link">
             Meet the cast of {this.props.moOb.title}!

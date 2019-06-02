@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Axios from 'axios'
 import IndividualMovies from '../components/IndividualMovies.jsx'
+import RandomButton from '../components/RandomButton.jsx'
 // import { Link } from 'react-router-dom'
 
 const apiKey = 'afc7a0ada171a2a77126fd0d421b758c'
@@ -25,6 +26,7 @@ class Homepage extends Component {
         <div>
           <header className="nav">
             <h1>The Best Movie Site Ever</h1>
+            <RandomButton />
           </header>
         </div>
         {/* link to movie page will be accessed by clicking on the movie */}
