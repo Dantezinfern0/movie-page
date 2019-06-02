@@ -44,6 +44,8 @@ div > div > header > h1 {
 .summary-info {
   font-style: italic;
   text-align: center;
+  margin-right: 18rem;
+  margin-left: 18rem;
 }
 .right-justify {
   text-align: right;
