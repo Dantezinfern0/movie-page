@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 import Axios from 'axios'
 import HomeButton from '../components/HomeButton.js'
 import CastMember from '../components/CastMember.js'
+// import { Link } from 'react-router-dom'
 
 const startUrl = 'https://api.themoviedb.org/3/movie/'
 const midUrl = '/credits?api_key='
 const apiKey = 'afc7a0ada171a2a77126fd0d421b758c'
 
-class MoviePage extends Component {
+class CastPage extends Component {
   state = {
     castList: []
   }
@@ -41,4 +41,4 @@ class MoviePage extends Component {
   }
 }
 
-export default MoviePage
+export default CastPage

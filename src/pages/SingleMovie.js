@@ -4,7 +4,7 @@ import HomeButton from '../components/HomeButton.js'
 
 const apiKey = 'afc7a0ada171a2a77126fd0d421b758c'
 
-class Cast extends Component {
+class SingleMovie extends Component {
   componentDidMount() {
     Axios.get(
       `https://api.themoviedb.org/3/movie/420817/credits?api_key=${apiKey}`
@@ -16,11 +16,11 @@ class Cast extends Component {
   render() {
     return (
       <div>
-        <h2>Cast goes here. (with pictures hopefully)</h2>
+        <h2>SingleMovie goes here. (with pictures hopefully)</h2>
         <HomeButton/>
       </div>
     )
   }
 }
 
-export default Cast
+export default SingleMovie

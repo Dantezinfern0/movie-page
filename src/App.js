@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import Homepage from './pages/Homepage'
-import Cast from './pages/Cast'
+import SingleMovie from './pages/SingleMovie'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import MoviePage from './pages/MoviePage.js'
+import CastPage from './pages/CastPage.js'
 // import Axios from 'axios'
 
 class App extends Component {
@@ -12,8 +12,8 @@ class App extends Component {
         <Router>
           <Switch>
             <Route path="/" exact component={Homepage} />
-            <Route path="/Movie/:id" exact component={MoviePage} />
-            <Route path="/cast" exact component={Cast} />
+            <Route path="/Movie/:id" exact component={SingleMovie} />
+            <Route path="/cast/:id" exact component={CastPage} />
           </Switch>
         </Router>
       </>
