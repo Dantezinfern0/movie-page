@@ -10,7 +10,7 @@ class IndividualMovies extends Component {
     return (
       <div className="movie-container">
         <h1 className="centered-text">{this.props.moOb.title}</h1>
-        <Link to={`/Movie/${this.props.moOb.id}`}>
+        <Link key={this.props.moOb.id} to={`/Movie/${this.props.moOb.id}`}>
           <img
             className="home-poster"
             src={`${imagePreUrl}${imageSize[1]}${this.props.moOb.poster_path}`}

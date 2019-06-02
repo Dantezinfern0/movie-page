@@ -44,6 +44,8 @@ div > div > header > h1 {
 .summary-info {
   font-style: italic;
   text-align: center;
+  margin-right: 18rem;
+  margin-left: 18rem;
 }
 .right-justify {
   text-align: right;
@@ -117,4 +119,7 @@ hr {
   background-size: cover;
   height: 100vh;
   width: 100%;
+}
+.hide-it {
+  display: none;
 }
