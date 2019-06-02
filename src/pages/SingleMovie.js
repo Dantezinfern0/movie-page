@@ -24,8 +24,11 @@ class SingleMovie extends Component {
     return (
       <div>
         <h1>This Is the Individual Movie Page</h1>
-        <h2>I am not sure if we need another fetch or if we can tie into the data that we already fetched somehow but I'm a little lost so Individual going to go back to the P in PEDAC</h2>
-        {/* <IndividualMovies moOb={this.state.MovieList} /> */}
+        <h2>
+          we need to figure out how fetch or set the state of movieInfo to align
+          with the movie Id number that the user clicked on on the home page
+        </h2>
+        <IndividualMovies moOb={this.state.movieInfo} />
         <HomeButton />
       </div>
     )
