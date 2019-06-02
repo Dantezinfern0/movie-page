@@ -29,7 +29,8 @@ class Homepage extends Component {
             <RandomButton />
           </header>
         </div>
-        {/* link to movie page will be accessed by clicking on the movie */}
+        {/* link to movie page will be accessed by 
+        clicking on the movie poster */}
         <ul>
           {this.state.movieList.map((mOb, i) => {
             return <IndividualMovies key={i} moOb={mOb} />
