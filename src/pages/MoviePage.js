@@ -24,7 +24,7 @@ class MoviePage extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="background-scroll">
         <div className="movie-page-container">
           <h1>Cast</h1>
         </div>
