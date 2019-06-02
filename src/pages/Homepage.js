@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 import Axios from 'axios'
 import IndividualMovies from '../components/IndividualMovies.jsx'
+// import { Link } from 'react-router-dom'
 
 const apiKey = 'afc7a0ada171a2a77126fd0d421b758c'
 const apiUrl = 'https://api.themoviedb.org/3/movie/now_playing?api_key='
