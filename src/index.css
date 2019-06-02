@@ -80,7 +80,8 @@ body {
 }
 
 hr {
-  margin-right: 4rem;
+  margin-right: 8rem;
+  margin-left: 8rem;
 }
 .background-scroll {
   background-image: url('./images/curtain.jpg');

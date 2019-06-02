@@ -6,16 +6,19 @@ const imageSize = ['w92', 'w154', 'w185', 'w342', 'w500', 'w780', 'original']
 class CastMember extends Component {
   render() {
     return (
-      <div className="actor-container">
-        <img
-          className="cast-photo"
-          src={`${imagePreUrl}${imageSize[1]}${this.props.char.profile_path}`}
-          alt="no photo available"
-        />
-        <p className="actor-info">
-          {this.props.char.name} as "{this.props.char.character}"
-        </p>
-      </div>
+      <>
+        <div className="actor-container">
+          <img
+            className="cast-photo"
+            src={`${imagePreUrl}${imageSize[1]}${this.props.char.profile_path}`}
+            alt="no photo available"
+          />
+          <p className="actor-info">
+            {this.props.char.name} as "{this.props.char.character}"
+          </p>
+        </div>
+        <hr />
+      </>
     )
   }
 }
