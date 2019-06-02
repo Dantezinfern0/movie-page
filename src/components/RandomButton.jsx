@@ -6,7 +6,7 @@ class RandomButton extends Component {
     return (
       <div className="random-button-container">
         <Link
-          classname="random-button-text"
+          className="random-button-text"
           // to={`/Movie/${
           //   this.props.state.movieList[
           //     Math.floor(Math.random() * this.props.state.movieList.length)
