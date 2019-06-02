@@ -14,7 +14,12 @@ class SingleMovie extends Component {
   state = {
     movieTitle: '',
     moviePoster: '',
-    movieTagLine: ''
+    movieTagLine: '',
+    movieRunTime: ''
+  }
+
+  roundRunTime() {
+    return (this.state.movieRunTime / 60).toFixed(1)
   }
   componentDidMount() {
     const movieId = this.props.match.params.id
@@ -23,7 +28,8 @@ class SingleMovie extends Component {
       this.setState({
         movieTitle: resp.data.original_title,
         moviePoster: imagePreUrl + imageSize[0] + resp.data.backdrop_path,
-        movieTagLine: resp.data.tagline
+        movieTagLine: resp.data.tagline,
+        movieRunTime: resp.data.runtime
       })
       console.log(this.state.moviePoster)
     })
@@ -35,6 +41,7 @@ class SingleMovie extends Component {
         <h1>{this.state.movieTitle}</h1>
         <img src={`${this.state.moviePoster}`} />
         <h2>{this.state.movieTagLine}</h2>
+        <h3>Runtime: {this.roundRunTime()} hours</h3>
         {/* <div>
           {/* <IndividualMovies movie={this.state.movieInfo.original_title} /> */}
         {/* </div>
