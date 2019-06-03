@@ -36,6 +36,7 @@ class CastPage extends Component {
             })}
           </ul>
         </div>
+        <HomeButton/>
       </div>
     )
   }
