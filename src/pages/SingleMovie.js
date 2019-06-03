@@ -27,7 +27,7 @@ class SingleMovie extends Component {
       console.log({ resp })
       this.setState({
         movieTitle: resp.data.original_title,
-        moviePoster: imagePreUrl + imageSize[0] + resp.data.backdrop_path,
+        moviePoster: imagePreUrl + imageSize[1] + resp.data.backdrop_path,
         movieTagLine: resp.data.tagline,
         movieRunTime: resp.data.runtime
       })
@@ -37,8 +37,8 @@ class SingleMovie extends Component {
 
   render() {
     return (
-      <div>
-        <h1>{this.state.movieTitle}</h1>
+      <div className="movie-page">
+        <h1 className="movie-title">'{this.state.movieTitle}'</h1>
         <img src={`${this.state.moviePoster}`} />
         <h2>{this.state.movieTagLine}</h2>
         <h3>Runtime: {this.roundRunTime()} hours</h3>

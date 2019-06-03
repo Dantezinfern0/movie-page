@@ -109,7 +109,7 @@ div > div > header > h1 {
 
 hr {
   margin-right: 8rem;
-  margin-left: 8rem;
+  margin-left: 6rem;
 }
 .background-scroll {
   background-image: url('./images/curtain.jpg');
@@ -122,4 +122,17 @@ hr {
 }
 .hide-it {
   display: none;
+}
+
+.movie-page {
+  color: white;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin: 3rem;
+  padding-bottom: 1rem;
+}
+
+.movie-title {
+  font-size: 40px;
 }
