@@ -8,7 +8,7 @@ import CastPage from './pages/CastPage.js'
 class App extends Component {
   render() {
     return (
-      <>
+      <div>
         <Router>
           <Switch>
             <Route path="/" exact component={Homepage} />
@@ -16,7 +16,7 @@ class App extends Component {
             <Route path="/cast/:id" exact component={CastPage} />
           </Switch>
         </Router>
-      </>
+      </div>
     )
   }
 }

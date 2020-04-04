@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Axios from 'axios'
 import HomeButton from '../components/HomeButton.js'
-// import IndividualMovies from '../components/IndividualMovies.jsx'
+import TopButton from '../components/TopButton.jsx'
 
 const imagePreUrl = 'https://image.tmdb.org/t/p/'
 const imageSize = ['w300', 'w780', 'w1280', 'original']
@@ -46,6 +46,7 @@ class SingleMovie extends Component {
         <h2>{this.state.movieTagLine}</h2>
         <h3>Runtime: {this.roundRunTime()} hours</h3>
         <HomeButton />
+        <TopButton />
       </div>
     )
   }
