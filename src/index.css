@@ -23,6 +23,10 @@ div > div > header > h1 {
 img {
   max-width: 100%;
 }
+hr {
+  margin-right: 8rem;
+  margin-left: 6rem;
+}
 .homepage-background {
   margin: 0;
   background-image: url('./images/highlight.jpg');
@@ -67,13 +71,22 @@ img {
 .movie-page-container {
   text-align: center;
   color: ivory;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-
+.center-text {
+  text-align: center;
+}
+.color-ivory {
+  color: ivory;
+}
 .actor-container {
   color: ivory;
   display: flex;
   align-content: center;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -114,11 +127,6 @@ img {
 
 .actor-info {
   font-size: 20px;
-}
-
-hr {
-  margin-right: 8rem;
-  margin-left: 6rem;
 }
 .background-scroll {
   background-image: url('./images/curtain.jpg');

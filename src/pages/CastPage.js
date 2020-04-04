@@ -24,15 +24,15 @@ class CastPage extends Component {
   render() {
     return (
       <div className="background-scroll">
-        <div className="movie-page-container">
-          <h1>Cast</h1>
-        <div>
-          <ul>
+          <h1 className="center-text color-ivory">
+            Cast
+          </h1>
+        <div className="center-text">
+          <ul className="movie-page-container">
             {this.state.castList.map((char, i) => {
               return <CastMember key={i} char={char} />
             })}
           </ul>
-        </div>
         <HomeButton/>
         </div>
       </div>

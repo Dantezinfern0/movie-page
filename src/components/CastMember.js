@@ -8,16 +8,16 @@ class CastMember extends Component {
     return (
       <div>
         <div className="actor-container">
+          <section>
           <img
-            className="cast-photo"
             src={`${imagePreUrl}${imageSize[1]}${this.props.char.profile_path}`}
             alt={`cast member ${this.props.char.name}`}
           />
           <p className="actor-info">
             {this.props.char.name} as "{this.props.char.character}"
           </p>
+          </section>
         </div>
-        <hr />
       </div>
     )
   }
