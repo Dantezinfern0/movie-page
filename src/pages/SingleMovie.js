@@ -45,10 +45,7 @@ class SingleMovie extends Component {
         />
         <h2>{this.state.movieTagLine}</h2>
         <h3>Runtime: {this.roundRunTime()} hours</h3>
-        {/* <div>
-          {/* <IndividualMovies movie={this.state.movieInfo.original_title} /> */}
-        {/* </div>
-        <IndividualMovies moOb={this.state.movieInfo} /> */}{' '}
+     
         <HomeButton />
       </div>
     )
