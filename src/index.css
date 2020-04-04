@@ -17,7 +17,9 @@ div > div > header > h1 {
   text-align: center;
   font-family: 'Kumar One Outline', cursive;
 }
-
+img {
+  max-width: 100%;
+}
 .homepage-background {
   margin: 0;
   background-image: url('./images/highlight.jpg');
@@ -131,6 +133,7 @@ hr {
   border-radius: 5px;
   margin: 3rem;
   padding-bottom: 1rem;
+  box-shadow: 0 0 10px;
 }
 
 .movie-title {

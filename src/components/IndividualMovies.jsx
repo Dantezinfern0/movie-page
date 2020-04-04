@@ -14,6 +14,7 @@ class IndividualMovies extends Component {
           <img
             className="home-poster"
             src={`${imagePreUrl}${imageSize[1]}${this.props.moOb.poster_path}`}
+            alt={`poster for the movie ${this.props.moOb.title}`}
           />
         </Link>
         {/* <img src="http://image.tmdb.org/t/p/w500/wgQ7APnFpf1TuviKHXeEe3KnsTV.jpg" /> working url path to test */}

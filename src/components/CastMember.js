@@ -11,7 +11,7 @@ class CastMember extends Component {
           <img
             className="cast-photo"
             src={`${imagePreUrl}${imageSize[1]}${this.props.char.profile_path}`}
-            alt="no photo available"
+            alt={`cast member ${this.props.char.name}`}
           />
           <p className="actor-info">
             {this.props.char.name} as "{this.props.char.character}"

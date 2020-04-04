@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Axios from 'axios'
 import HomeButton from '../components/HomeButton.js'
-import IndividualMovies from '../components/IndividualMovies.jsx'
+// import IndividualMovies from '../components/IndividualMovies.jsx'
 
 const imagePreUrl = 'https://image.tmdb.org/t/p/'
 const imageSize = ['w300', 'w780', 'w1280', 'original']
@@ -39,7 +39,10 @@ class SingleMovie extends Component {
     return (
       <div className="movie-page">
         <h1 className="movie-title">'{this.state.movieTitle}'</h1>
-        <img src={`${this.state.moviePoster}`} />
+        <img 
+          src={`${this.state.moviePoster}`}
+          alt={``}
+        />
         <h2>{this.state.movieTagLine}</h2>
         <h3>Runtime: {this.roundRunTime()} hours</h3>
         {/* <div>
