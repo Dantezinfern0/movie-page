@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import Moment from 'react-moment'
+import Moment from 'react-moment'
 import { Link } from 'react-router-dom'
 
 const imagePreUrl = 'https://image.tmdb.org/t/p/'
@@ -28,8 +28,11 @@ class IndividualMovies extends Component {
           Rating/Vote Score: {this.props.moOb.vote_average}
         </h4>
         <h5 className="right-justify">
-          Released:{this.props.moOb.release_date}
-          {/* <Moment format="MMM Do, YYYY">{this.props.moOb.release_date}</Moment> */}
+          <Moment 
+          parse="YYYY-MM-DD"
+          format="MMM Do, YYYY" 
+          date={this.props.moOb.release_date} 
+          />
         </h5>
       </div>
     )
