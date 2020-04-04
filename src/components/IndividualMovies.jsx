@@ -17,7 +17,6 @@ class IndividualMovies extends Component {
             alt={`poster for the movie ${this.props.moOb.title}`}
           />
         </Link>
-        {/* <img src="http://image.tmdb.org/t/p/w500/wgQ7APnFpf1TuviKHXeEe3KnsTV.jpg" /> working url path to test */}
         <h3 className="summary-info">{this.props.moOb.overview}</h3>
         <h6>
           <Link to={`/Cast/${this.props.moOb.id}`} className="movie-link">
@@ -29,9 +28,9 @@ class IndividualMovies extends Component {
         </h4>
         <h5 className="right-justify">
           <Moment 
-          parse="YYYY-MM-DD"
-          format="MMM Do, YYYY" 
-          date={this.props.moOb.release_date} 
+            parse="YYYY-MM-DD"
+            format="MMM Do, YYYY" 
+            date={this.props.moOb.release_date} 
           />
         </h5>
       </div>

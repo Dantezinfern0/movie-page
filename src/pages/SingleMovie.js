@@ -41,11 +41,10 @@ class SingleMovie extends Component {
         <h1 className="movie-title">'{this.state.movieTitle}'</h1>
         <img 
           src={`${this.state.moviePoster}`}
-          alt={``}
+          alt={`poster for ${this.state.movieTitle}`}
         />
         <h2>{this.state.movieTagLine}</h2>
         <h3>Runtime: {this.roundRunTime()} hours</h3>
-     
         <HomeButton />
       </div>
     )

@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Axios from 'axios'
 import HomeButton from '../components/HomeButton.js'
 import CastMember from '../components/CastMember.js'
-// import { Link } from 'react-router-dom'
 
 const startUrl = 'https://api.themoviedb.org/3/movie/'
 const midUrl = '/credits?api_key='
@@ -26,9 +25,7 @@ class CastPage extends Component {
     return (
       <div className="background-scroll">
         <div className="movie-page-container">
-          <HomeButton />
           <h1>Cast</h1>
-        </div>
         <div>
           <ul>
             {this.state.castList.map((char, i) => {
@@ -37,6 +34,7 @@ class CastPage extends Component {
           </ul>
         </div>
         <HomeButton/>
+        </div>
       </div>
     )
   }

@@ -6,7 +6,9 @@ class HomeButton extends Component {
     return (
       <div>
         <Link className="home-button" to="/">
-          Home Page
+          <button>
+            Back To Home Page
+          </button>
         </Link>
       </div>
     )
