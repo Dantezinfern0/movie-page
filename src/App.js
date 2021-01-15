@@ -3,7 +3,6 @@ import Homepage from './pages/Homepage'
 import SingleMovie from './pages/SingleMovie'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import CastPage from './pages/CastPage.js'
-// import Axios from 'axios'
 
 class App extends Component {
   render() {
