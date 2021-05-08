@@ -18,19 +18,21 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "stylelint": "^10.0.1",
+    "@babel/runtime-corejs3": "^7.14.0",
+    "core-js": "^3.12.1",
+    "stylelint": "^13.13.1",
     "stylelint-config-standard": "^18.3.0"
   },
   "dependencies": {
     "axios": "^0.21.1",
-    "json": "^9.0.6",
+    "json": "^11.0.0",
     "moment": "^2.24.0",
     "netlify-cli": "^3.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-moment": "^0.9.7",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "^3.0.1"
+    "react-scripts": "^4.0.3"
   },
   "homepage": "https://movies-danteharasz.netlify.com"
 }
